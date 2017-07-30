@@ -68,11 +68,21 @@ export default class App extends React.Component {
       imagenSeleccionada: 0
     }
   }
+  /**
+   * Evento al seleccinar color
+   * 
+   * @param {String} propColor nueo color seleccionado
+   */
   cambioColor (propColor) {
     this.setState({
       colorSeleccionado: propColor
     })
   }
+  /**
+   * Evento al seleccionar una imagen
+   * 
+   * @param {Integer} propImagen Nuevo index de la imagen seleccionada
+   */
   cambioImagen (propImagen) {
     this.setState({
       imagenSeleccionada: propImagen
