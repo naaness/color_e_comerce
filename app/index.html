@@ -9,6 +9,71 @@
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <title>React.js Boilerplate</title>
+    <style type="text/css">
+      body {
+        font-family: Arial;
+      }
+
+      .layout {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .pointer {
+        width: 300px;
+        margin: 20px 0 0 20px;
+      }
+
+      .pointer-fluid {
+        margin: 20px 0 0 20%;
+        width: 30%;
+      }
+
+      .pointer__instructions, .pointer-fluid__instructions {
+        padding-bottom: 20px;
+        font-size: larger;
+        text-align: center;
+      }
+
+      .touch {
+        width: 300px;
+        margin: 20px auto;
+      }
+
+      .touch-fluid {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .touch-fluid__image-container {
+        flex: 0 0 100%;
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      .touch-fluid__instructions {
+        flex: 0 0 100%;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @media (min-width: 480px) {
+        .touch-fluid {
+          flex-direction: row;
+        }
+
+        .touch-fluid__image-container{
+          flex: 0 0 30%;
+          width: auto;
+        }
+
+        .touch-fluid__instructions {
+          flex: 0 0 50%;
+          width: auto;
+          padding-top: 20px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Display a message if JS has been disabled on the browser. -->
